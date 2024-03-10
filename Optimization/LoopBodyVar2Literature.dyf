@@ -1,0 +1,1015 @@
+{
+  "Uuid": "1352a9cd-7c40-4ce1-81b6-77af04dae5e0",
+  "IsCustomNode": true,
+  "Category": "Thesis.2D.Nvariable.LoopBodyVar2",
+  "Description": "",
+  "Name": "LoopBodyVar1Literature",
+  "ElementResolver": {
+    "ResolutionMap": {
+      "Point": {
+        "Key": "Autodesk.DesignScript.Geometry.Point",
+        "Value": "ProtoGeometry.dll"
+      },
+      "DSCore.Color": {
+        "Key": "DSCore.Color",
+        "Value": "DSCoreNodes.dll"
+      },
+      "Math": {
+        "Key": "DSCore.Math",
+        "Value": "DSCoreNodes.dll"
+      },
+      "List": {
+        "Key": "List",
+        "Value": "BuiltIn.ds"
+      },
+      "Line": {
+        "Key": "Autodesk.DesignScript.Geometry.Line",
+        "Value": "ProtoGeometry.dll"
+      }
+    }
+  },
+  "Inputs": [],
+  "Outputs": [],
+  "Nodes": [
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CustomNodes.Output, DynamoCore",
+      "NodeType": "OutputNode",
+      "ElementResolver": null,
+      "Symbol": "results;",
+      "Id": "2fe5d88383d74473abaf0495baa180c2",
+      "Inputs": [
+        {
+          "Id": "85cd6cee72d0405abf246f9722a50a17",
+          "Name": "",
+          "Description": "Output Data",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [],
+      "Replication": "Disabled",
+      "Description": "A function output, use with custom nodes"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CustomNodes.Symbol, DynamoCore",
+      "NodeType": "InputNode",
+      "Parameter": {
+        "Name": "init",
+        "TypeName": "var",
+        "TypeRank": -1,
+        "DefaultValue": null,
+        "Description": ""
+      },
+      "Id": "7c358bc10eed47558cbe2218a74cb5d1",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "f1c7d927a91b4abd821c64a70161bbf4",
+          "Name": "",
+          "Description": "Input Data",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "A function parameter, use with custom nodes.\r\n\r\nYou can specify the type and default value for parameter. E.g.,\r\n\r\ninput : var[]..[]\r\nvalue : bool = false"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "LoopWhile@var[]..[],Function,Function",
+      "Id": "1bf02ba0b4d7473f90d0aeb3359b5782",
+      "Inputs": [
+        {
+          "Id": "912a0435a64148d4abaafbd00db650b7",
+          "Name": "initialValue",
+          "Description": "initial value for loop\n\nvar[]..[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "e695ed8babbb460c9742e7470dadd41d",
+          "Name": "continueWhile",
+          "Description": "while loop condition\n\nFunction",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "b108f02845904bb6a8d90df8dc41e1ac",
+          "Name": "loopBody",
+          "Description": "while loop body\n\nFunction",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "9720534ec744417da8ae767af2d08459",
+          "Name": "result",
+          "Description": "Result from loop (type: var[]..[])",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Constructs a while loop node given an initial value, a condition and a loop body.\n\nLoopWhile (initialValue: var[]..[], continueWhile: Function, loopBody: Function): var[]..[]"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "DSCore.List.Count@var[]..[]",
+      "Id": "c4f195a4cb524ca89d9481c6794e95db",
+      "Inputs": [
+        {
+          "Id": "0ea30582f1124e1b8a034edd0575bd25",
+          "Name": "list",
+          "Description": "List to get the item count of.\n\nvar[]..[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "77066c410b3d4bbfaf599e6640cf4a82",
+          "Name": "int",
+          "Description": "List length.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Returns the number of items stored in the given list.\n\nList.Count (list: var[]..[]): int"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "lst[0];",
+      "Id": "af392952e28f4d5da2797ba91218c0e6",
+      "Inputs": [
+        {
+          "Id": "238eb5ae93de4792943efbb69a823e0e",
+          "Name": "lst",
+          "Description": "lst",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "6055375279fc43cc8f8a820ca9f0911b",
+          "Name": "",
+          "Description": "Value of expression at line 1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.CreateList, CoreNodeModels",
+      "VariableInputPorts": true,
+      "NodeType": "ExtensionNode",
+      "Id": "ceb0cc3684b245d08f023f197b60b85c",
+      "Inputs": [
+        {
+          "Id": "13cdb9b1a1ff4bc681c4605fad162b93",
+          "Name": "item0",
+          "Description": "Item Index #0",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "f2338ba3282942a490c0a7ebac45e5b0",
+          "Name": "item1",
+          "Description": "Item Index #1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "ae28e50944a34dd4b66c71272d3b4cb1",
+          "Name": "list",
+          "Description": "A list (type: var[]..[])",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Makes a new list from the given inputs"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "0;",
+      "Id": "78abe739b26244e58b24b9f6e37fb4aa",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "84f3807385834b0bb4a1e5c0f2bfd1b4",
+          "Name": "",
+          "Description": "Value of expression at line 1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "PythonNodeModels.PythonNode, PythonNodeModels",
+      "NodeType": "PythonScriptNode",
+      "Code": "# Load the Python Standard and DesignScript Libraries\r\nimport sys\r\nimport clr\r\nimport random\r\nimport sys\r\nfrom io import StringIO\r\nsys.stdout = StringIO()\r\nclr.AddReference('ProtoGeometry')\r\nfrom Autodesk.DesignScript.Geometry import *\r\n\r\n# The inputs to this node will be stored as a list in the IN variables.\r\ndataEnteringNode = IN\r\n\r\nlower_limits = IN[1]\r\nupper_limits = IN[2]\r\n\r\npopulation_size = 1\r\nchromosome_length = IN[3]\r\n\r\noriginal_list= IN[0]\r\n\r\ninner_list = original_list[1][1]\r\nfitness = inner_list[-1][1:]  # Exclude the first element\r\nvariables= inner_list[:-1]\r\npopulation=[[lst] for lst in variables]\r\n\r\n\r\n#population =[[group] for group in population1]\r\n#print(\"population\",population)\r\nelite_rate = 3\r\nmutation_rate =0.1\r\n\r\n\r\n\r\npopulation =[[[round(num, 1) for num in inner_lst] for inner_lst in outer_lst] for outer_lst in population]\r\n#print(\"population\",population)\r\n\r\n\r\nelite_count = int(population_size * elite_rate)\r\n\r\n\r\nelite_indices1 = sorted(enumerate(fitness), key=lambda x: x[1])[:elite_count]\r\n#print(elite_indices1)\r\n\r\nelite_indices=[tup[0] for tup in elite_indices1]\r\n#print(elite_indices)\r\n\r\nelites = [[group[0][index] for index in elite_indices] for group in population]\r\n#print(\"elites\",elites)\r\n\r\n\r\n# Define the number of individuals in each population\r\nPOPULATION_SIZE = 5\r\n\r\n# # Define the range of possible values for each element in the list\r\n# MIN_VALUE = [0, 0, 0, 0, 1]\r\n# MAX_VALUE = [4, 4, 4, 4, 20]\r\n\r\n\r\ndef decimal_to_binary(number):\r\n    binary = ''\r\n    binary1 = ''\r\n    if number < 0:\r\n        binary += '-'\r\n        number = abs(number)\r\n    \r\n    integer_part = int(number)\r\n\r\n    if not float(number).is_integer():\r\n        decimal_part1 = str(number)\r\n        decimal_part = int(decimal_part1.split('.')[1])\r\n    else:\r\n        decimal_part=0\r\n\r\n    ##print(\"integer_part\",integer_part,\"decimal_part\",decimal_part)\r\n    # Convert integer part to binary\r\n    if integer_part == 0:\r\n        binary += '0'\r\n    else:\r\n        while integer_part > 0:\r\n            binary = str(integer_part % 2) + binary\r\n            integer_part = integer_part // 2\r\n    \r\n    # Add decimal point if necessary\r\n    if decimal_part == 0:\r\n        binary1 += '0'\r\n    else:\r\n        while decimal_part > 0:\r\n            binary1 =   str(decimal_part % 2) + binary1\r\n            decimal_part = decimal_part // 2\r\n\r\n    binary=binary+'.'+binary1\r\n    return binary\r\n\r\na=decimal_to_binary(2.0)\r\n##print(\"aaaaaaaaaaaaa\",a)\r\ndef binary_to_decimal(binary):\r\n\r\n    # Check if the number is negative\r\n    negative = False\r\n    if binary[0] == '-':\r\n        negative = True\r\n        binary = binary[1:]\r\n    \r\n    # Split the binary string into integer and decimal parts\r\n    int_part, frac_part = binary.split('.')\r\n    ##print(\"int_part\",int_part,\"frac_part\",frac_part)\r\n    \r\n    # Convert the integer part to decimal\r\n    integer_part = 0\r\n\r\n    for i, digit in enumerate(int_part[::-1]):\r\n        if digit == '1':\r\n            integer_part += 2**i\r\n    \r\n    # Convert the decimal part to decimal\r\n    decimal_part = 0\r\n\r\n    \r\n    for i, digit in enumerate(frac_part[::-1]):\r\n        if digit == '1':\r\n            decimal_part += 2**i\r\n    \r\n    ##print(\"integer_partturn\",integer_part,\"decimal_partturn\",decimal_part)\r\n    # Combine the integer and decimal parts\r\n    number = float(str(integer_part)+ '.'+ str(decimal_part))\r\n    ##print(number)\r\n    # Apply the negative sign if necessary\r\n    if negative:\r\n        number *= -1\r\n    \r\n    return round(number,1)\r\n\r\ndef find_differing_positions(num1, num2):\r\n    differing_positions = []\r\n    # Convert the binary numbers to strings\r\n    num1_str = str(num1)\r\n    num2_str = str(num2)\r\n    \r\n    # Find the length of the longer number\r\n    max_length = max(len(num1_str), len(num2_str))\r\n    \r\n    # Pad the numbers with leading zeros to make them equal in length\r\n    num1_str = num1_str.zfill(max_length)\r\n    num2_str = num2_str.zfill(max_length)\r\n    \r\n    # Compare the numbers bit by bit\r\n    for i in range(max_length):\r\n        if num1_str[i] != num2_str[i]:\r\n            differing_positions.append(i)\r\n    \r\n    return differing_positions\r\n\r\ndef binary_crossover(individual1, individual2):\r\n    # Convert to lists if arguments are not already lists\r\n    if type(individual1) is not list:\r\n        individual1 = [individual1]\r\n    if type(individual2) is not list:\r\n        individual2 = [individual2]\r\n        \r\n    \r\n    offspring1 = []\r\n    offspring2 = []\r\n    ##print(\"individual1\",individual1)\r\n    ##print(\"individual2\",individual2)\r\n    for i in range(min(len(individual1), len(individual2))):\r\n        gene1 = decimal_to_binary(individual1[i])\r\n        gene2 = decimal_to_binary(individual2[i])\r\n        ##print(\"gene1\",gene1)\r\n        ##print(\"gene2\",gene2)\r\n        \r\n        # Split the binary string into integer and fractional parts\r\n        int_part1, frac_part1 = gene1.split('.')\r\n        int_part2, frac_part2 = gene2.split('.')\r\n        \r\n        # Determine the maximum length of the integer and fractional parts\r\n        max_int_len = max(len(int_part1), len(int_part2))\r\n        max_frac_len = max(len(frac_part1), len(frac_part2))\r\n        \r\n        # Pad the integer and fractional parts with zeros to make them equal length\r\n        int_part1 = int_part1.zfill(max_int_len)\r\n        int_part2 = int_part2.zfill(max_int_len)\r\n        frac_part1 = frac_part1.ljust(max_frac_len, '0')\r\n        frac_part2 = frac_part2.ljust(max_frac_len, '0')\r\n        \"\"\"#print(\"int_part1\",int_part1,\r\n        \"int_part2\" ,int_part2,\r\n        \"frac_part1\", frac_part1,\r\n        \"frac_part2\", frac_part2)\"\"\"\r\n        \r\n\r\n        diff_index_int= find_differing_positions(int_part1, int_part2)\r\n        diff_index1_frac= find_differing_positions(frac_part1, frac_part2)\r\n        ##print(\"diff_index_int\",diff_index_int,\"diff_index1_frac\",diff_index1_frac)\r\n        if not diff_index1_frac:\r\n            diff_index1_frac = [0]\r\n\r\n        if not diff_index_int:\r\n            diff_index_int = [0]\r\n\r\n\r\n        # Perform crossover on the integer part\r\n        crossover_index = random.choice(diff_index_int)\r\n        ##print(\"crossover_indexint\",crossover_index)\r\n        int_part1_new = list(int_part1)\r\n        int_part2_new = list(int_part2)\r\n        int_part1_new[crossover_index] = int_part2[crossover_index]\r\n        int_part2_new[crossover_index] = int_part1[crossover_index]\r\n        int_part1_new = ''.join(int_part1_new)\r\n        int_part2_new = ''.join(int_part2_new)\r\n        \r\n        # Perform crossover on the fractional part\r\n        \r\n        crossover_index = random.choice(diff_index1_frac)\r\n        ##print(\"crossover_indexfrac\",crossover_index)\r\n        frac_part1_new = list(frac_part1)\r\n        frac_part2_new = list(frac_part2)\r\n        frac_part1_new[crossover_index] = frac_part2[crossover_index]\r\n        frac_part2_new[crossover_index] = frac_part1[crossover_index]\r\n        frac_part1_new = ''.join(frac_part1_new)\r\n        frac_part2_new = ''.join(frac_part2_new)\r\n        \r\n        # Combine the integer and fractional parts of the offspring\r\n        gene1_new = int_part1_new + '.' + frac_part1_new\r\n        gene2_new = int_part2_new + '.' + frac_part2_new\r\n        ##print(\"gene1_new\",gene1_new)\r\n        ##print(\"gene2_new\",gene2_new)\r\n        \r\n        # Convert the binary string back to float gene\r\n        gene1_new = binary_to_decimal(gene1_new)\r\n        gene2_new = binary_to_decimal(gene2_new)\r\n\r\n        \r\n        offspring1.append(gene1_new)\r\n        offspring2.append(gene2_new)\r\n    \r\n    return offspring1, offspring2\r\n\r\n\r\n\r\n\r\noffspring = []\r\nfor i, elite in enumerate(elites):\r\n    #print(f\"New populations for elite {i+1}: {elite}\")\r\n    population = []\r\n    for k in range(POPULATION_SIZE):\r\n        # Choose different parents from the elite\r\n        parents = random.sample(elite, 2)\r\n        parent1, parent2 = parents[0], parents[1]\r\n\r\n        offspring1 = binary_crossover(parent1,parent2)\r\n        #print(offspring1)\r\n        #offspring1 = mutation(offspring1)\r\n        # offspring2 = mutation(offspring2)\r\n        population.append(offspring1)\r\n    population = [element for sublist in population for element in sublist]\r\n    #print(f\"Population {i+1}: {population}\")\r\n\r\n\r\n\r\n\r\n    unique_population = []\r\n    for sublist in population:\r\n        if sublist not in unique_population:\r\n            unique_population.append(sublist)\r\n    #print(\"unique_population\",unique_population) \r\n    \r\n    \r\n    unique_population=[item for item in unique_population if lower_limits[i] <= item[0] < upper_limits[i]]\r\n   \r\n    # Count the number of elements in the elites list\r\n    count = len(elites[0])\r\n    #print(\"count\",count,elites[0])\r\n    # Find the average of the elements in the elites list\r\n    average = sum(elites[0]) / count\r\n    #print(\"average\",average,sum(elites[0]))\r\n\r\n\r\n    # If there are still elements in the elites list\r\n    if len(unique_population) > chromosome_length:\r\n        while len(unique_population) > chromosome_length:\r\n        # Find the element in the elites list that is farthest from the average\r\n            farthest_element = max(unique_population, key=lambda x: abs(x[0] - average))\r\n            #print(\"uzun\",len(unique_population))\r\n\r\n        # Remove the farthest element from the elites list\r\n            unique_population.remove(farthest_element)\r\n    elif len(unique_population) < chromosome_length:\r\n        while len(unique_population) < chromosome_length:\r\n            unique_population.append([random.uniform(lower_limits[i], upper_limits[i])])\r\n    # Return the filtered and processed elites list\r\n    elif [0] in unique_population:\r\n        index = unique_population.index([0])\r\n        unique_population[index] = [random.uniform(lower_limits[i], upper_limits[i])]\r\n\r\n    population4=unique_population\r\n\r\n\r\n    #print(f\"mutation {1}: {population4}\")\r\n\r\n    offspring.append(unique_population)  \r\n    #print(\"offspring\",offspring) \r\n\r\nflattened_list = [[inner[0] for inner in outer] for outer in offspring]\r\n\r\nflattened_list.append([0])\r\n \r\n\r\n#print(\"***Starting print***\")\r\n#print(fitness)\r\n#print('pop',population)\r\n#print(\"***Ending print***\")\r\n#sys.stdout.seek(0)\r\n\r\n#OUT = sys.stdout.read()\r\nOUT =flattened_list\r\n    \r\n ",
+      "Engine": "CPython3",
+      "EngineName": "CPython3",
+      "VariableInputPorts": true,
+      "Id": "b852b76c8da1483289a3799dda1494ec",
+      "Inputs": [
+        {
+          "Id": "1b3b6d2112ca4b8f97f1aacac329ab12",
+          "Name": "IN[0]",
+          "Description": "Input #0",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "760b5ac744cb426eb65413146e65353d",
+          "Name": "IN[1]",
+          "Description": "Input #1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "85f2001c901b4fef987a56b7a7802f0a",
+          "Name": "IN[2]",
+          "Description": "Input #2",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "00ad2395978f47dba319c08e716188fb",
+          "Name": "IN[3]",
+          "Description": "Input #3",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "74b8c3c7627049d68b3d5162065d408a",
+          "Name": "OUT",
+          "Description": "Result of the python script",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Runs an embedded Python script."
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "lst[0];",
+      "Id": "557eac56e0af4ca98c3764bb5b441295",
+      "Inputs": [
+        {
+          "Id": "830dea769f0a4ebda35ef5a4a4dc14a5",
+          "Name": "lst",
+          "Description": "lst",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "13c680f2b0d6413aade2534c8dff37b5",
+          "Name": "",
+          "Description": "Value of expression at line 1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "a+1;",
+      "Id": "b2b4c5c02f8144c9bc9345d0fd17bdb8",
+      "Inputs": [
+        {
+          "Id": "4b97da104b3a458c8c06b105125a3808",
+          "Name": "a",
+          "Description": "a",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "b1271c6b109346eea3caa168a0cfac2a",
+          "Name": "",
+          "Description": "Value of expression at line 1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CustomNodes.Function, DynamoCore",
+      "FunctionSignature": "f23887a5-6312-4b08-9bee-a7e87f56be36",
+      "FunctionType": "Graph",
+      "NodeType": "FunctionNode",
+      "Id": "b3b0176ed09d456da5946748f4844208",
+      "Inputs": [
+        {
+          "Id": "1bcae31773964cb8bd52f33dce0829c5",
+          "Name": "init",
+          "Description": "var[]..[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "796e123c34f144b19d431b5296034459",
+          "Name": "IterationNumber",
+          "Description": "var[]..[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "31fabecc607e4739bd5558f9a6e117b7",
+          "Name": "Continue?",
+          "Description": "return value",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": ""
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CustomNodes.Function, DynamoCore",
+      "FunctionSignature": "7dfbaf51-2007-4768-b774-cd6b1eeadbf9",
+      "FunctionType": "Graph",
+      "NodeType": "FunctionNode",
+      "Id": "8dd83c70ebcd4be6b808a91ebac6b23c",
+      "Inputs": [
+        {
+          "Id": "88628f99122d47568d85b63331547695",
+          "Name": "init",
+          "Description": "var[]..[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "b37c91fe0bd5434782968815722c2f58",
+          "Name": "list",
+          "Description": "return value",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": ""
+    },
+    {
+      "ConcreteType": "CoreNodeModels.CreateList, CoreNodeModels",
+      "VariableInputPorts": true,
+      "NodeType": "ExtensionNode",
+      "Id": "39294c98e312445d872540a99360227f",
+      "Inputs": [
+        {
+          "Id": "7d3cf1c8dae749b0902d513e802775ad",
+          "Name": "item0",
+          "Description": "Item Index #0",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "593c39d21d1b4e72986d89a5e2ac9aa6",
+          "Name": "item1",
+          "Description": "Item Index #1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "4209c19583d444b889e7603f2f97a9ad",
+          "Name": "item2",
+          "Description": "Item Index #2",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "ddadc010f0654fba9fa3faa6dfdb1c32",
+          "Name": "list",
+          "Description": "A list (type: var[]..[])",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Makes a new list from the given inputs"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "lst[0];\nlst[1];",
+      "Id": "3f8cd8c5730a421d8ca17e97c17f0ffc",
+      "Inputs": [
+        {
+          "Id": "1b7de16897ab48ba9ecc0fca20359fff",
+          "Name": "lst",
+          "Description": "lst",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "4c50c35a55ce4752b80291ea3e6f5429",
+          "Name": "",
+          "Description": "Value of expression at line 1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "ea392e72996a4212b4bb3b316a9cb0f0",
+          "Name": "",
+          "Description": "Value of expression at line 2",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "PythonNodeModels.PythonNode, PythonNodeModels",
+      "NodeType": "PythonScriptNode",
+      "Code": "# Load the Python Standard and DesignScript Libraries\r\nimport sys\r\nimport clr\r\nimport random\r\nimport sys\r\nfrom io import StringIO\r\nsys.stdout = StringIO()\r\nclr.AddReference('ProtoGeometry')\r\nfrom Autodesk.DesignScript.Geometry import *\r\n\r\n# The inputs to this node will be stored as a list in the IN variables.\r\ndataEnteringNode = IN\r\n\r\n\r\npopulation_size = 1\r\nchromosome_length = 8\r\n\r\noriginal_list= IN[0]\r\noriginal_list2= IN[1]\r\n\r\ninner_list1 = original_list2[1][1]\r\nlast_list1 = inner_list1[-1][1:]  # Exclude the first element\r\nvariables1 = inner_list1[:-1]\r\nvariables1 = [[lst] for lst in variables1]\r\n\r\n# # print(last_list1)\r\n# # print(variables1)\r\n\r\ninner_list = original_list[1]\r\nfitness1 = inner_list[-1][1:]  # Exclude the first element\r\nvariables= inner_list[:-1]\r\npopulation1=[[lst] for lst in variables]\r\n\r\npopulation = []\r\nfor sublist1, sublist2 in zip(population1, variables1):\r\n    combined_sublist = sublist1[0] + sublist2[0]\r\n    population.append([combined_sublist])\r\n\r\n\r\nfitness= fitness1+last_list1\r\n# print(\"fitness\",fitness,\"population\",population)\r\n\r\n\r\nelite_rate = 3\r\nmutation_rate =0.1\r\npopulation_size = 1\r\nchromosome_length = 8\r\n\r\n\r\n\r\n\r\npopulation =[[[round(num, 1) for num in inner_lst] for inner_lst in outer_lst] for outer_lst in population]\r\n# # print(\"population\",population)\r\n\r\n\r\nelite_count = 8\r\n\r\n\r\nelite_indices1 = sorted(enumerate(fitness), key=lambda x: x[1])[:elite_count]\r\n# print(elite_indices1)\r\n\r\nelite_indices=[tup[0] for tup in elite_indices1]\r\n# print(elite_indices)\r\n\r\nelites = [[group[0][index] for index in elite_indices] for group in population]\r\n# print(\"elites\",elites)\r\n\r\n\r\n\r\nelites_fittness = [fitness[index] for index in elite_indices] \r\nelites_fittness=[0]+elites_fittness\r\n# print(\"elites_fittness\",elites_fittness)\r\n\r\noutput=[0]+[elites+[elites_fittness]]\r\n\r\ninner_list2 = original_list2[2][1]\r\nlast_list2 = inner_list2[-1][1:]  # Exclude the first element\r\nvariables2 = inner_list2[:-1]\r\nvariables2 = [[lst] for lst in variables2]\r\n\r\nhsfitness=[0]+last_list2+fitness1\r\n\r\nhspop=[]\r\n\r\nfor sublist1, sublist2 in zip(variables2, population1):\r\n    combined_sublist = sublist1[0] + sublist2[0]\r\n    hspop.append([combined_sublist])\r\n\r\nhspop = [item for sublist in hspop for item in sublist]\r\noutput2=[\"history\"]+[hspop+[hsfitness]]\r\nresult=output+output2\r\n# print(\"output\",output)\r\nOUT =output,output2\r\n    \r\n ",
+      "Engine": "CPython3",
+      "EngineName": "CPython3",
+      "VariableInputPorts": true,
+      "Id": "3cbd5cee34e547a28fddc58b0c2a7444",
+      "Inputs": [
+        {
+          "Id": "027a61a9bcb74eb8b8945849a54090c1",
+          "Name": "IN[0]",
+          "Description": "Input #0",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "cf5e63e107504265b0abcc589e0674b0",
+          "Name": "IN[1]",
+          "Description": "Input #1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "4d9b51dce1784943a6c5e93b9b4360ad",
+          "Name": "OUT",
+          "Description": "Result of the python script",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Runs an embedded Python script."
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "[16,16,16,16];",
+      "Id": "0a5d6ecb928649ccb720580f0901e57e",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "9c903e7f3edf432a881370e6dc9b3f60",
+          "Name": "",
+          "Description": "Value of expression at line 1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "[0,0,0,0];",
+      "Id": "966be1e4a64e4dcbbc0a1c3bdb1b52e0",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "9b715dcce95c477fbf38fd676a64c94a",
+          "Name": "",
+          "Description": "Value of expression at line 1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "5;",
+      "Id": "42c7dc896b9945af914ef27c754e6d53",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "eb287e1d78f04cb8acfa7d6a7f3373e1",
+          "Name": "",
+          "Description": "Value of expression at line 1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
+    }
+  ],
+  "Connectors": [
+    {
+      "Start": "f1c7d927a91b4abd821c64a70161bbf4",
+      "End": "830dea769f0a4ebda35ef5a4a4dc14a5",
+      "Id": "35d56f7482434aae8eff5df65e2bb337",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "f1c7d927a91b4abd821c64a70161bbf4",
+      "End": "1b3b6d2112ca4b8f97f1aacac329ab12",
+      "Id": "304318b2f9c649b9b87cd43e3af9fd54",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "f1c7d927a91b4abd821c64a70161bbf4",
+      "End": "cf5e63e107504265b0abcc589e0674b0",
+      "Id": "d88b9d104190481dbecc0682154781bd",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "9720534ec744417da8ae767af2d08459",
+      "End": "027a61a9bcb74eb8b8945849a54090c1",
+      "Id": "8853f5eb95e242dc9ceffbf2acf5b24a",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "77066c410b3d4bbfaf599e6640cf4a82",
+      "End": "796e123c34f144b19d431b5296034459",
+      "Id": "255a6b542b02480fa0bd4cf5bc20ad6f",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "6055375279fc43cc8f8a820ca9f0911b",
+      "End": "0ea30582f1124e1b8a034edd0575bd25",
+      "Id": "2916762b9c6841c2a8526b9d90e4a0d0",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "ae28e50944a34dd4b66c71272d3b4cb1",
+      "End": "912a0435a64148d4abaafbd00db650b7",
+      "Id": "ea5b80ff1d7a4de2933d19d408f48507",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "84f3807385834b0bb4a1e5c0f2bfd1b4",
+      "End": "13cdb9b1a1ff4bc681c4605fad162b93",
+      "Id": "95604ca61e2849278cf69922ab73449b",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "74b8c3c7627049d68b3d5162065d408a",
+      "End": "238eb5ae93de4792943efbb69a823e0e",
+      "Id": "10fa7ceb2a274a42b6824965de81ff86",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "74b8c3c7627049d68b3d5162065d408a",
+      "End": "f2338ba3282942a490c0a7ebac45e5b0",
+      "Id": "589c32aa1a1b480f977510cd549ea32c",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "13c680f2b0d6413aade2534c8dff37b5",
+      "End": "4b97da104b3a458c8c06b105125a3808",
+      "Id": "3f08f717c015458987e7bf4e80a5e1ef",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "b1271c6b109346eea3caa168a0cfac2a",
+      "End": "7d3cf1c8dae749b0902d513e802775ad",
+      "Id": "8111fe4af4b84b7986ad18b6a5b9d33b",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "31fabecc607e4739bd5558f9a6e117b7",
+      "End": "e695ed8babbb460c9742e7470dadd41d",
+      "Id": "a779d2d7131a48b9b8692ea52a3d2078",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "b37c91fe0bd5434782968815722c2f58",
+      "End": "b108f02845904bb6a8d90df8dc41e1ac",
+      "Id": "cc9c092d05f248d0b4653cf55ff9e994",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "ddadc010f0654fba9fa3faa6dfdb1c32",
+      "End": "85cd6cee72d0405abf246f9722a50a17",
+      "Id": "f3596d83170747f0a2a4a6f6d984a249",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "4c50c35a55ce4752b80291ea3e6f5429",
+      "End": "593c39d21d1b4e72986d89a5e2ac9aa6",
+      "Id": "fe922ad0b5ed4193bcf8dd7f5f8caed5",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "ea392e72996a4212b4bb3b316a9cb0f0",
+      "End": "4209c19583d444b889e7603f2f97a9ad",
+      "Id": "cd635ffaceac4e239998a49397f10105",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "4d9b51dce1784943a6c5e93b9b4360ad",
+      "End": "1b7de16897ab48ba9ecc0fca20359fff",
+      "Id": "4c7fe46a49cc49f1ab2df91c81f0ce9a",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "9c903e7f3edf432a881370e6dc9b3f60",
+      "End": "85f2001c901b4fef987a56b7a7802f0a",
+      "Id": "22481406cb3b4a329fa810831626da32",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "9b715dcce95c477fbf38fd676a64c94a",
+      "End": "760b5ac744cb426eb65413146e65353d",
+      "Id": "61a9f0aeed3b4df5bff3702107fa8153",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "eb287e1d78f04cb8acfa7d6a7f3373e1",
+      "End": "00ad2395978f47dba319c08e716188fb",
+      "Id": "8adcc2d5c7ce48a994b418b29f698b7e",
+      "IsHidden": "False"
+    }
+  ],
+  "Dependencies": [
+    "f23887a5-6312-4b08-9bee-a7e87f56be36",
+    "7dfbaf51-2007-4768-b774-cd6b1eeadbf9"
+  ],
+  "NodeLibraryDependencies": [
+    {
+      "Name": "LoopCheck.dyf",
+      "ReferenceType": "DYFFile",
+      "Nodes": [
+        "b3b0176ed09d456da5946748f4844208"
+      ]
+    },
+    {
+      "Name": "LoopBodyVar1Literature.dyf",
+      "ReferenceType": "DYFFile",
+      "Nodes": [
+        "8dd83c70ebcd4be6b808a91ebac6b23c"
+      ]
+    }
+  ],
+  "Author": "None provided",
+  "Bindings": [],
+  "View": {
+    "Dynamo": {
+      "ScaleFactor": 1.0,
+      "HasRunWithoutCrash": false,
+      "IsVisibleInDynamoLibrary": true,
+      "Version": "2.17.0.3472",
+      "RunType": "Manual",
+      "RunPeriod": "1000"
+    },
+    "Camera": {
+      "Name": "_Background Preview",
+      "EyeX": 24.744325637817383,
+      "EyeY": 5.03481388092041,
+      "EyeZ": 39.883659362792969,
+      "LookX": -4.959930419921875,
+      "LookY": -4.0139260292053223,
+      "LookZ": -38.661514282226563,
+      "UpX": 0.014405007474124432,
+      "UpY": 0.993571937084198,
+      "UpZ": 0.11228317767381668
+    },
+    "ConnectorPins": [],
+    "NodeViews": [
+      {
+        "Name": "Output",
+        "ShowGeometry": true,
+        "Id": "2fe5d88383d74473abaf0495baa180c2",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 4132.6145102492173,
+        "Y": 1531.8844359660493
+      },
+      {
+        "Name": "Input",
+        "ShowGeometry": true,
+        "Id": "7c358bc10eed47558cbe2218a74cb5d1",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 228.02346370243919,
+        "Y": 1075.5235105159493
+      },
+      {
+        "Name": "LoopWhile",
+        "ShowGeometry": true,
+        "Id": "1bf02ba0b4d7473f90d0aeb3359b5782",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 2502.8815076445403,
+        "Y": 1483.7539570623917
+      },
+      {
+        "Name": "List.Count",
+        "ShowGeometry": true,
+        "Id": "c4f195a4cb524ca89d9481c6794e95db",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1591.6560143892598,
+        "Y": 1620.553462262812
+      },
+      {
+        "Name": "Code Block",
+        "ShowGeometry": true,
+        "Id": "af392952e28f4d5da2797ba91218c0e6",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1312.1654092817303,
+        "Y": 1586.2667632713619
+      },
+      {
+        "Name": "List Create",
+        "ShowGeometry": true,
+        "Id": "ceb0cc3684b245d08f023f197b60b85c",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 2291.7824897323503,
+        "Y": 1287.3504675818619
+      },
+      {
+        "Name": "Code Block",
+        "ShowGeometry": true,
+        "Id": "78abe739b26244e58b24b9f6e37fb4aa",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1908.57585302682,
+        "Y": 1257.691606442062
+      },
+      {
+        "Name": "GENERATİON",
+        "ShowGeometry": true,
+        "Id": "b852b76c8da1483289a3799dda1494ec",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 993.46887777272013,
+        "Y": 1389.7509929805617
+      },
+      {
+        "Name": "Code Block",
+        "ShowGeometry": true,
+        "Id": "557eac56e0af4ca98c3764bb5b441295",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1244.2072198215542,
+        "Y": 977.67005326707908
+      },
+      {
+        "Name": "Code Block",
+        "ShowGeometry": true,
+        "Id": "b2b4c5c02f8144c9bc9345d0fd17bdb8",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 2257.7891054123797,
+        "Y": 994.702899864315
+      },
+      {
+        "Name": "LoopCheck",
+        "ShowGeometry": true,
+        "Id": "b3b0176ed09d456da5946748f4844208",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 2150.5068316648585,
+        "Y": 1492.3082819158956
+      },
+      {
+        "Name": "LoopBodyVar1Literature",
+        "ShowGeometry": true,
+        "Id": "8dd83c70ebcd4be6b808a91ebac6b23c",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 2243.7980100405521,
+        "Y": 1710.0925040432994
+      },
+      {
+        "Name": "List Create",
+        "ShowGeometry": true,
+        "Id": "39294c98e312445d872540a99360227f",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 3759.8136584045205,
+        "Y": 1512.3152144435549
+      },
+      {
+        "Name": "Code Block",
+        "ShowGeometry": true,
+        "Id": "3f8cd8c5730a421d8ca17e97c17f0ffc",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 3482.0630529459504,
+        "Y": 1565.0670661988147
+      },
+      {
+        "Name": "Python Script",
+        "ShowGeometry": true,
+        "Id": "3cbd5cee34e547a28fddc58b0c2a7444",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 3150.8696040797404,
+        "Y": 1535.2545310819548
+      },
+      {
+        "Name": "Upper Limits",
+        "ShowGeometry": true,
+        "Id": "0a5d6ecb928649ccb720580f0901e57e",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 554.31579709893015,
+        "Y": 1627.9208598880971
+      },
+      {
+        "Name": "Lower Limits",
+        "ShowGeometry": true,
+        "Id": "966be1e4a64e4dcbbc0a1c3bdb1b52e0",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 583.32703565817508,
+        "Y": 1489.2524149293563
+      },
+      {
+        "Name": "Population size",
+        "ShowGeometry": true,
+        "Id": "42c7dc896b9945af914ef27c754e6d53",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 578.91318990132424,
+        "Y": 1750.2957446644091
+      }
+    ],
+    "Annotations": [
+      {
+        "Id": "c77a173110884a0b8b90e0d285a41363",
+        "Title": "INITIAL POPULATION  FITTNESS CALCULATOR",
+        "DescriptionText": "",
+        "IsExpanded": true,
+        "WidthAdjustment": 0.0,
+        "HeightAdjustment": 0.0,
+        "Nodes": [
+          "1bf02ba0b4d7473f90d0aeb3359b5782",
+          "ceb0cc3684b245d08f023f197b60b85c",
+          "78abe739b26244e58b24b9f6e37fb4aa",
+          "b3b0176ed09d456da5946748f4844208",
+          "8dd83c70ebcd4be6b808a91ebac6b23c"
+        ],
+        "HasNestedGroups": false,
+        "Left": 1898.57585302682,
+        "Top": 1184.491606442062,
+        "Width": 862.30565461772039,
+        "Height": 657.40089760123738,
+        "FontSize": 36.0,
+        "GroupStyleId": "00000000-0000-0000-0000-000000000000",
+        "InitialTop": 1257.691606442062,
+        "InitialHeight": 597.40089760123738,
+        "TextblockHeight": 63.199999999999996,
+        "Background": "#FFC1D676"
+      }
+    ],
+    "X": -307.40526215721968,
+    "Y": -1240.5024307986839,
+    "Zoom": 0.95361643517524763
+  }
+}
