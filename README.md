@@ -47,9 +47,9 @@ Contributions are welcome! If you have improvements or bug fixes, please follow 
 
 ## Contact
 
-- Feyzullah YAVAN - www.linkedin.com/in/ugurfey - uguryavan@hotmail.com
+- Feyzullah YAVAN - www.linkedin.com/in/ugurfey - feyzullah.yavan@kit.edu
 
 
 ## Acknowledgments
 
-Special thanks to my thesis supervisors Prof. Dr. Vedat TOĞAN and Prof. Dr. Reza MAALEK for their guidance and support throughout this research.
+Special thanks to my supervisors Prof. Dr. Vedat TOĞAN and Prof. Dr. Reza MAALEK for their guidance and support throughout this research.
