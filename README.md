@@ -14,7 +14,8 @@ This repository hosts the implementation of an innovative methodology for the in
 - **Life Cycle Assessment and Cost Analysis**: Incorporates LCA and cost analysis via Revit and Tally to evaluate the environmental and economic impact of optimized designs.
 
 
-https://github.com/ugurfeyzullah/Structural-optimization-with-VP/assets/149387821/4caecf14-e871-4039-829f-5659affa08c5
+https://github.com/ugurfeyzullah/Intelligent-Optimization-of-Steel-Structures-Through-Bim-Based-Visual-Programming-Platform-and-Tools/assets/149387821/1a740c3f-726e-4c73-bff2-73ec3b768a9e
+
 
 
 ## Getting Started
@@ -40,7 +41,7 @@ https://github.com/ugurfeyzullah/Structural-optimization-with-VP/assets/14938782
 3. **Optimization with Dynamo**: Open the provided Dynamo script to perform optimization. Adjust input parameters as needed for your specific structural design requirements and change the provided core node if needed.
 4. **Analysis in RSA**: Provided script will use RSA for detailed FEA as part of the optimization loop.
 5. **Evaluation**: Evaluate the optimization results, including stress, displacement, and weight.
-6. **Next generation creation**: Generate genx generation by using metaheuristic algorithms. Python libraries or own generated python codes can be employed for this step. A sample code has been provided along with shared scripts.
+6. **Next generation creation**: Generate genx generation by using metaheuristic algorithms. Python libraries or own generated python codes can be employed for this step. A sample code has been provided along with shared scripts.[Example Document](Optimization)
 7. **Revit interaction**: Optimized design can be imported Revit for further analyses by using provided optimization script. [Example Document](example-document.pdf)
 8. **LCA and Cost Analysis**: Utilize Revit and Tally for environmental and economic assessment.
 
