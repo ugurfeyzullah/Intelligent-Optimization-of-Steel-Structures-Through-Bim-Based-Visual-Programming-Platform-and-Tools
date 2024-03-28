@@ -5,6 +5,10 @@
 
 This repository hosts the implementation of an innovative methodology for the intelligent optimization of steel structures using a BIM-based visual programming platform and tools. The methodology leverages Genetic Algorithms (GA), Visual Programming (VP) with Dynamo, and FEA with RSA to minimize structural weight while satisfying stress and displacement constraints.
 
+
+https://github.com/ugurfeyzullah/Intelligent-Optimization-of-Steel-Structures-Through-Bim-Based-Visual-Programming-Platform-and-Tools/assets/149387821/e676c552-5990-47b6-99b1-c9eda3e27502
+
+
 ## Features
 
 - **Integration with BIM Tools**: Utilizes Dynamo for visual programming and Revit for BIM to streamline the structural design and optimization process.
@@ -43,7 +47,14 @@ https://github.com/ugurfeyzullah/Intelligent-Optimization-of-Steel-Structures-Th
 5. **Evaluation**: Evaluate the optimization results, including stress, displacement, and weight.
 6. **Next generation creation**: Generate genx generation by using metaheuristic algorithms. Python libraries or own generated python codes can be employed for this step. A sample code has been provided along with shared scripts.[Example Document](Optimization)
 7. **Revit interaction**: Optimized design can be imported Revit for further analyses by using provided optimization script. [Example Document](example-document.pdf)
-8. **LCA and Cost Analysis**: Utilize Revit and Tally for environmental and economic assessment.
+8. **LCA and Cost Analysis**: Utilize Revit and Tally for environmental and economic assessment as presented in upcoming video.
+
+
+
+https://github.com/ugurfeyzullah/Intelligent-Optimization-of-Steel-Structures-Through-Bim-Based-Visual-Programming-Platform-and-Tools/assets/149387821/809b5812-1147-4b17-a448-58cc2236c4cc
+
+
+
 
 ## Contributing
 
@@ -58,7 +69,9 @@ Contributions are welcome! If you have improvements or bug fixes, please follow 
 ## Citation
 
 If you have used our framework for research purposes, you can cite our publication by:
+
 (To be added)
+
 BibTex:
 (To be added)
 
@@ -69,7 +82,7 @@ BibTex:
 
 ## Acknowledgments
 
-Special thanks to my supervisors Prof. Dr. Vedat TOĞAN and Prof. Dr. Reza MAALEK for their guidance and support throughout this research.
+Special thanks to my supervisors Prof. Dr. Reza MAALEK and  Prof. Dr. Vedat TOĞAN for their guidance and support throughout this research.
 
 ## License
 
