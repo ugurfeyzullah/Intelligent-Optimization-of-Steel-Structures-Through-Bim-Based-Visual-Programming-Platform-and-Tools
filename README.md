@@ -53,3 +53,8 @@ Contributions are welcome! If you have improvements or bug fixes, please follow 
 ## Acknowledgments
 
 Special thanks to my supervisors Prof. Dr. Vedat TOĞAN and Prof. Dr. Reza MAALEK for their guidance and support throughout this research.
+
+## License
+
+This project is licensed under the Apache License - see the [LICENSE.md](LICENSE) file for details.
+
