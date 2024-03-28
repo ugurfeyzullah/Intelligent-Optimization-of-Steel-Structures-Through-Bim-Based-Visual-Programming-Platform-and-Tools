@@ -1,15 +1,22 @@
 
+![GA_2DTRUSS_Literature_2024-03-28_04-14-55](https://github.com/ugurfeyzullah/Structural-optimization-with-VP/assets/149387821/d431ece5-21c5-4f71-8fc4-bc887d315710)
+
+**Quick Links:** [Documentation](#features) / [Installation](#installation) / [Usage](#usage) / [Paper](#acknowledgments) /  [Citation](#citation) / [Contact](#contact)
 # Intelligent Optimization of Steel Structures
 
-This repository hosts the implementation of an innovative methodology for the intelligent optimization of steel structures using a BIM-based visual programming platform and tools, as detailed in the Master Thesis by Feyzullah YAVAN at Karadeniz Technical University. The methodology leverages Genetic Algorithms (GA), Visual Programming (VP) with Dynamo, and FEA with RSA to minimize structural weight while satisfying stress and displacement constraints.
+This repository hosts the implementation of an innovative methodology for the intelligent optimization of steel structures using a BIM-based visual programming platform and tools. The methodology leverages Genetic Algorithms (GA), Visual Programming (VP) with Dynamo, and FEA with RSA to minimize structural weight while satisfying stress and displacement constraints.
 
 ## Features
 
 - **Integration with BIM Tools**: Utilizes Dynamo for visual programming and Revit for BIM to streamline the structural design and optimization process.
 - **Genetic Algorithm Optimization**: Employs genetic algorithms for efficient search and optimization of structural parameters.
-- **Finite Element Analysis**: Uses Robot Structural Analysis (RSA) for accurate stress and displacement calculations.
+- **Finite Element Analysis**: Uses Robot Structural Analysis (RSA) for accurate stress, weight and displacement calculations.
 - **Visual Programming**: Leverages the power of Dynamo to facilitate the parametric modeling and optimization process.
 - **Life Cycle Assessment and Cost Analysis**: Incorporates LCA and cost analysis via Revit and Tally to evaluate the environmental and economic impact of optimized designs.
+
+
+https://github.com/ugurfeyzullah/Structural-optimization-with-VP/assets/149387821/4caecf14-e871-4039-829f-5659affa08c5
+
 
 ## Getting Started
 
@@ -17,6 +24,7 @@ This repository hosts the implementation of an innovative methodology for the in
 
 - Autodesk Revit
 - Dynamo for Revit
+- Structural analysis for Dynamo package
 - Robot Structural Analysis Professional
 - Basic knowledge of structural engineering and optimization
 
@@ -28,11 +36,14 @@ This repository hosts the implementation of an innovative methodology for the in
 
 ## Usage
 
-1. **Model Preparation**: Start by preparing your structural model in Revit.
-2. **Optimization with Dynamo**: Open the provided Dynamo script to perform optimization. Adjust input parameters as needed for your specific structural design requirements.
-3. **Analysis in RSA**: Use RSA for detailed FEA as part of the optimization loop.
-4. **Evaluation**: Evaluate the optimization results, including stress, displacement, and weight.
-5. **LCA and Cost Analysis**: Utilize Revit and Tally for environmental and economic assessment.
+1. **Model Preparation**: Start by preparing your parametric structural model in Dynamo.
+2. **Core node creation**: Create a core node from your parametric model by turning it into a custom node.
+3. **Optimization with Dynamo**: Open the provided Dynamo script to perform optimization. Adjust input parameters as needed for your specific structural design requirements and change the provided core node if needed.
+4. **Analysis in RSA**: Provided script will use RSA for detailed FEA as part of the optimization loop.
+5. **Evaluation**: Evaluate the optimization results, including stress, displacement, and weight.
+6. **Next generation creation**: Generate genx generation by using metaheuristic algorithms. Python libraries or own generated python codes can be employed for this step. A sample code has been provided along with shared scripts.
+7. **Revit interaction**: Optimized design can be imported Revit for further analyses by using provided optimization script. [Example Document](example-document.pdf)
+8. **LCA and Cost Analysis**: Utilize Revit and Tally for environmental and economic assessment.
 
 ## Contributing
 
@@ -44,6 +55,12 @@ Contributions are welcome! If you have improvements or bug fixes, please follow 
 4. Push to the branch (`git push origin feature/AmazingFeature`).
 5. Open a pull request.
 
+## Citation
+
+If you have used our framework for research purposes, you can cite our publication by:
+(To be added)
+BibTex:
+(To be added)
 
 ## Contact
 
@@ -56,5 +73,5 @@ Special thanks to my supervisors Prof. Dr. Vedat TOĞAN and Prof. Dr. Reza MAALE
 
 ## License
 
-This project is licensed under the Apache License - see the [LICENSE.md](LICENSE) file for details.
+This project is licensed under the Apache License - see the [LICENSE.md](LICENSE.md) file for details.
 
