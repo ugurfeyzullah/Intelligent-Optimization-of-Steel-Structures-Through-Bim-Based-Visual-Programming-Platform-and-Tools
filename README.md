@@ -46,7 +46,7 @@ https://github.com/ugurfeyzullah/Intelligent-Optimization-of-Steel-Structures-Th
 4. **Analysis in RSA**: Provided script will use RSA for detailed FEA as part of the optimization loop.
 5. **Evaluation**: Evaluate the optimization results, including stress, displacement, and weight.
 6. **Next generation creation**: Generate genx generation by using metaheuristic algorithms. Python libraries or own generated python codes can be employed for this step. A sample code has been provided along with shared scripts.[Example Document](Optimization)
-7. **Revit interaction**: Optimized design can be imported Revit for further analyses by using provided optimization script. [Example Document](Optimization with Revit integration)
+7. **Revit interaction**: Optimized design can be imported Revit for further analyses by using provided optimization script. [Example Document](<Optimization with Revit integration>)
 8. **LCA and Cost Analysis**: Utilize Revit and Tally for environmental and economic assessment as presented in upcoming video.
 
 
