@@ -1,8 +1,7 @@
-
+# Intelligent Optimization of Steel Structures
 ![GA_2DTRUSS_Literature_2024-03-28_04-14-55](https://github.com/ugurfeyzullah/Structural-optimization-with-VP/assets/149387821/d431ece5-21c5-4f71-8fc4-bc887d315710)
 
 **Quick Links:** [Documentation](#features) / [Installation](#installation) / [Usage](#usage) / [Paper](#acknowledgments) /  [Citation](#citation) / [Contact](#contact)
-# Intelligent Optimization of Steel Structures
 
 This repository hosts the implementation of an innovative methodology for the intelligent optimization of steel structures using a BIM-based visual programming platform and tools. The methodology leverages Genetic Algorithms (GA), Visual Programming (VP) with Dynamo, and FEA with RSA to minimize structural weight while satisfying stress and displacement constraints.
 
@@ -73,5 +72,5 @@ Special thanks to my supervisors Prof. Dr. Vedat TOĞAN and Prof. Dr. Reza MAALE
 
 ## License
 
-This project is licensed under the Apache License - see the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the Apache License - see the [LICENSE](LICENSE.md) file for details.
 
