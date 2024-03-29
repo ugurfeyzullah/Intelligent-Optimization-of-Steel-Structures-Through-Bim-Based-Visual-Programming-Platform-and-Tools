@@ -5,8 +5,19 @@
 
 This repository hosts the implementation of an innovative methodology for the intelligent optimization of steel structures using a BIM-based visual programming platform and tools. The methodology leverages Genetic Algorithms (GA), Visual Programming (VP) with Dynamo, and FEA with RSA to minimize structural weight while satisfying stress and displacement constraints.
 
+This project was conceptualized and performed during the research stay at the research group of Jun.-Prof. Dr. Reza Maalek, the GOLDBECK endowed chair in Digital Engineering and Construction (DEC) at the Institute of Technology and Management in Construction (TMB) of the Karlsruhe Institute of Technology (KIT). The findings and experimental details were presented in the M.Sc. thesis for the partial fulfillment of the degree of Master of Science in Civil Engineering at the Kardeniz Technical University (KTU) under the joint supervision of Jun.-Prof. Dr. Reza Maalek and Prof. Dr. Vedat Togan. The author contributions (based on MDPI’s categorization) are as follows:
 
-https://github.com/ugurfeyzullah/Intelligent-Optimization-of-Steel-Structures-Through-Bim-Based-Visual-Programming-Platform-and-Tools/assets/149387821/e676c552-5990-47b6-99b1-c9eda3e27502
+Conceptualization, R.M. and F.Y.; methodology, R.M., F.Y., and V.T.; software, F.Y.; validation, F.Y.; formal analysis, F.Y.; investigation, R.M. and F.Y.; resources, R.M.; data curation, F.Y.; writing—original draft preparation, F.Y.; writing—review and editing, R.M. and V.T.; visualization, F.Y.; supervision, R.M. and V.T.; project administration, R.M. and V.T.; funding acquisition, R.M.
+
+
+
+
+
+
+https://github.com/ugurfeyzullah/Intelligent-Optimization-of-Steel-Structures-Through-Bim-Based-Visual-Programming-Platform-and-Tools/assets/149387821/1261d706-0fb2-452e-8fc2-2f25243358e3
+
+
+
 
 
 ## Features
@@ -18,7 +29,10 @@ https://github.com/ugurfeyzullah/Intelligent-Optimization-of-Steel-Structures-Th
 - **Life Cycle Assessment and Cost Analysis**: Incorporates LCA and cost analysis via Revit and Tally to evaluate the environmental and economic impact of optimized designs.
 
 
-https://github.com/ugurfeyzullah/Intelligent-Optimization-of-Steel-Structures-Through-Bim-Based-Visual-Programming-Platform-and-Tools/assets/149387821/1a740c3f-726e-4c73-bff2-73ec3b768a9e
+
+
+https://github.com/ugurfeyzullah/Intelligent-Optimization-of-Steel-Structures-Through-Bim-Based-Visual-Programming-Platform-and-Tools/assets/149387821/f16c190f-1e9f-4d1b-a5bc-2ce4900322ce
+
 
 
 
@@ -79,10 +93,6 @@ BibTex:
 
 - Feyzullah YAVAN - www.linkedin.com/in/ugurfey - feyzullah.yavan@kit.edu
 
-
-## Acknowledgments
-
-Special thanks to my supervisors Prof. Dr. Reza MAALEK and  Prof. Dr. Vedat TOĞAN for their guidance and support throughout this research.
 
 ## License
 
