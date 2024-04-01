@@ -82,9 +82,9 @@ Contributions are welcome! If you have improvements or bug fixes, please follow 
 
 ## Citation
 
-If you have used our framework for research purposes, you can cite our publication by:
+If you have used our framework for research purposes, you can cite our publication by following reference:
 
-(To be added)
+DOI: 10.20944/preprints202404.0060.v1
 
 BibTex:
 (To be added)
