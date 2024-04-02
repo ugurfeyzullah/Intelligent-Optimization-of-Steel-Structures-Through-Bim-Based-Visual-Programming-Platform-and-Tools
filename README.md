@@ -1,7 +1,7 @@
 # Intelligent Optimization of Steel Structures
 ![GA_2DTRUSS_Literature_2024-03-28_04-14-55](https://github.com/ugurfeyzullah/Structural-optimization-with-VP/assets/149387821/d431ece5-21c5-4f71-8fc4-bc887d315710)
 
-**Quick Links:** [Documentation](#features) / [Installation](#installation) / [Usage](#usage) / [Paper](#acknowledgments) /  [Citation](#citation) / [Contact](#contact)
+**Quick Links:** [Documentation](#features) / [Installation](#installation) / [Usage](#usage) / [Paper](https://www.preprints.org/manuscript/202404.0060/v1) /  [Citation](#citation) / [Contact](#contact)
 
 This repository hosts the implementation of an innovative methodology for the intelligent optimization of steel structures using a BIM-based visual programming platform and tools. The methodology leverages Genetic Algorithms (GA), Visual Programming (VP) with Dynamo, and FEA with RSA to minimize structural weight while satisfying stress and displacement constraints.
 
@@ -84,10 +84,27 @@ Contributions are welcome! If you have improvements or bug fixes, please follow 
 
 If you have used our framework for research purposes, you can cite our publication by following reference:
 
-DOI: 10.20944/preprints202404.0060.v1
+MDPI and ACS Style
+Yavan, F.; Maalek, R.; Toğan, V. Structural Optimization in Building Information Modeling (BIM) Projects Using Visual Programming, Evolutionary Algorithms, and Sustainability Assessment Tools. Preprints 2024, 2024040060. https://doi.org/10.20944/preprints202404.0060.v1
+
+APA Style
+Yavan, F., Maalek, R., & Toğan, V. (2024). Structural Optimization in Building Information Modeling (BIM) Projects Using Visual Programming, Evolutionary Algorithms, and Sustainability Assessment Tools. Preprints. https://doi.org/10.20944/preprints202404.0060.v1
+
+Chicago/Turabian Style
+Yavan, F., Reza Maalek and Vedat Toğan. 2024 "Structural Optimization in Building Information Modeling (BIM) Projects Using Visual Programming, Evolutionary Algorithms, and Sustainability Assessment Tools" Preprints. https://doi.org/10.20944/preprints202404.0060.v
 
 BibTex:
-(To be added)
+
+@article{202404.0060,
+	doi = {10.20944/preprints202404.0060.v1},
+	url = {https://doi.org/10.20944/preprints202404.0060.v1},
+	year = 2024,
+	month = {April},
+	publisher = {Preprints},
+	author = {Feyzullah Yavan and Reza Maalek and Vedat Toğan},
+	title = {Structural Optimization in Building Information Modeling (BIM) Projects Using Visual Programming, Evolutionary Algorithms, and Sustainability Assessment Tools},
+	journal = {Preprints}
+}
 
 ## Contact
 
