@@ -23,7 +23,7 @@ https://github.com/ugurfeyzullah/Intelligent-Optimization-of-Steel-Structures-Th
 ## Features
 
 - **Integration with BIM Tools**: Utilizes Dynamo for visual programming and Revit for BIM to streamline the structural design and optimization process.
-- **Genetic Algorithm Optimization**: Employs genetic algorithms for efficient search and optimization of structural parameters.
+- **Genetic Algorithm Optimization**: Employs simple genetic algorithm to test proposed workflow. It is suggested to update GA provided as sample in shared documents for better results.
 - **Finite Element Analysis**: Uses Robot Structural Analysis (RSA) for accurate stress, weight and displacement calculations.
 - **Visual Programming**: Leverages the power of Dynamo to facilitate the parametric modeling and optimization process.
 - **Life Cycle Assessment and Cost Analysis**: Incorporates LCA and cost analysis via Revit and Tally to evaluate the environmental and economic impact of optimized designs.
