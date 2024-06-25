@@ -82,28 +82,28 @@ Contributions are welcome! If you have improvements or bug fixes, please follow 
 
 ## Citation
 
-If you have used our framework for research purposes, you can cite our publication by following reference:
-
 MDPI and ACS Style
-Yavan, F.; Maalek, R.; Toğan, V. Structural Optimization in Building Information Modeling (BIM) Projects Using Visual Programming, Evolutionary Algorithms, and Sustainability Assessment Tools. Preprints 2024, 2024040060. https://doi.org/10.20944/preprints202404.0060.v1
+Yavan, F.; Maalek, R.; Toğan, V. Structural Optimization of Trusses in Building Information Modeling (BIM) Projects Using Visual Programming, Evolutionary Algorithms, and Life Cycle Assessment (LCA) Tools. Buildings 2024, 14, 1532. https://doi.org/10.3390/buildings14061532
 
-APA Style
-Yavan, F., Maalek, R., & Toğan, V. (2024). Structural Optimization in Building Information Modeling (BIM) Projects Using Visual Programming, Evolutionary Algorithms, and Sustainability Assessment Tools. Preprints. https://doi.org/10.20944/preprints202404.0060.v1
+AMA Style
+Yavan F, Maalek R, Toğan V. Structural Optimization of Trusses in Building Information Modeling (BIM) Projects Using Visual Programming, Evolutionary Algorithms, and Life Cycle Assessment (LCA) Tools. Buildings. 2024; 14(6):1532. https://doi.org/10.3390/buildings14061532
 
 Chicago/Turabian Style
-Yavan, F., Reza Maalek and Vedat Toğan. 2024 "Structural Optimization in Building Information Modeling (BIM) Projects Using Visual Programming, Evolutionary Algorithms, and Sustainability Assessment Tools" Preprints. https://doi.org/10.20944/preprints202404.0060.v
+Yavan, Feyzullah, Reza Maalek, and Vedat Toğan. 2024. "Structural Optimization of Trusses in Building Information Modeling (BIM) Projects Using Visual Programming, Evolutionary Algorithms, and Life Cycle Assessment (LCA) Tools" Buildings 14, no. 6: 1532. https://doi.org/10.3390/buildings14061532
 
 BibTex:
 
-@article{202404.0060,
-	doi = {10.20944/preprints202404.0060.v1},
-	url = {https://doi.org/10.20944/preprints202404.0060.v1},
-	year = 2024,
-	month = {April},
-	publisher = {Preprints},
-	author = {Feyzullah Yavan and Reza Maalek and Vedat Toğan},
-	title = {Structural Optimization in Building Information Modeling (BIM) Projects Using Visual Programming, Evolutionary Algorithms, and Sustainability Assessment Tools},
-	journal = {Preprints}
+@Article{buildings14061532,
+AUTHOR = {Yavan, Feyzullah and Maalek, Reza and Toğan, Vedat},
+TITLE = {Structural Optimization of Trusses in Building Information Modeling (BIM) Projects Using Visual Programming, Evolutionary Algorithms, and Life Cycle Assessment (LCA) Tools},
+JOURNAL = {Buildings},
+VOLUME = {14},
+YEAR = {2024},
+NUMBER = {6},
+ARTICLE-NUMBER = {1532},
+URL = {https://www.mdpi.com/2075-5309/14/6/1532},
+ISSN = {2075-5309},
+DOI = {10.3390/buildings14061532}
 }
 
 ## Contact
